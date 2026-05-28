@@ -10,6 +10,12 @@ def transform_weather_data(data):
         "humidity": hourly_data.get("relative_humidity_2m", [])
     })
 
+    # Convert time column to datetime
+    df["time"] = pd.to_datetime(df["time"])
+
+    # User-friendly time format
+    df["formatted_time"] = df["time"].dt.strftime("%d %b %Y %I:%M %p")
+
     # Derived field
     df["weather_condition"] = df["temperature"].apply(
         lambda x: "Hot" if x > 30 else "Normal"
