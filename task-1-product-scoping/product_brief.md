@@ -55,3 +55,13 @@ The dashboard will rely on data exported from existing marketing platforms such 
 - LinkedIn Ads
 
 For V1, data will be uploaded manually through CSV exports to avoid disrupting the team's current workflow.
+
+## Building User Trust
+
+Users should trust the dashboard results.
+
+To improve reliability:
+- uploaded data will be validated
+- metric definitions will remain consistent
+- processing steps will be transparent
+- errors in uploaded files will be clearly shown
