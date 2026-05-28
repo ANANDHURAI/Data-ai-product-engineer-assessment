@@ -1,5 +1,7 @@
 from fetch_weather import fetch_weather_data
 from transform import transform_weather_data
+from bigquery_loader import load_to_bigquery
+
 
 def main():
 
@@ -11,11 +13,11 @@ def main():
 
         print(transformed_df.head())
 
+        load_to_bigquery(transformed_df)
+
     else:
         print("Failed to fetch weather data")
 
 
 if __name__ == "__main__":
     main()
-    
-    
