@@ -44,3 +44,14 @@ A user should be able to:
 - compare channels
 - identify trends
 - make decisions faster
+
+## Data Sources
+
+The dashboard will rely on data exported from existing marketing platforms such as:
+
+- Google Ads
+- Meta Ads
+- Google Analytics
+- LinkedIn Ads
+
+For V1, data will be uploaded manually through CSV exports to avoid disrupting the team's current workflow.
